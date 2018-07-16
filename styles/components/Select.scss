@@ -1,0 +1,26 @@
+.ui-select {
+  position: relative;
+  color: #636363;
+  
+  &.disabled {
+    cursor: not-allowed;
+    color: #a9a9a9;
+    
+    select {
+      cursor: not-allowed;
+    }
+  }
+
+  .ui-select-placeholder {
+    color: #a9a9a9;
+  }
+
+  select {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}

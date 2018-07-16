@@ -1,0 +1,133 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "dragon-mobile-ui@^0.0.33",
+        "scope": null,
+        "escapedName": "dragon-mobile-ui",
+        "name": "dragon-mobile-ui",
+        "rawSpec": "^0.0.33",
+        "spec": ">=0.0.33 <0.0.34",
+        "type": "range"
+      },
+      "D:\\hengqin\\jdt-wx-static"
+    ]
+  ],
+  "_from": "dragon-mobile-ui@>=0.0.33 <0.0.34",
+  "_id": "dragon-mobile-ui@0.0.33",
+  "_inCache": true,
+  "_location": "/dragon-mobile-ui",
+  "_nodeVersion": "4.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/dragon-mobile-ui-0.0.33.tgz_1482835648245_0.6696371072903275"
+  },
+  "_npmUser": {
+    "name": "linji",
+    "email": "16908091@qq.com"
+  },
+  "_npmVersion": "2.15.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "dragon-mobile-ui@^0.0.33",
+    "scope": null,
+    "escapedName": "dragon-mobile-ui",
+    "name": "dragon-mobile-ui",
+    "rawSpec": "^0.0.33",
+    "spec": ">=0.0.33 <0.0.34",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/dragon-mobile-ui/-/dragon-mobile-ui-0.0.33.tgz",
+  "_shasum": "3b1c607c6a0059733868797ce7371ff73276150c",
+  "_shrinkwrap": null,
+  "_spec": "dragon-mobile-ui@^0.0.33",
+  "_where": "D:\\hengqin\\jdt-wx-static",
+  "author": {
+    "name": "Jerome.Lin",
+    "email": "16908091@qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/JeromeLin/dragon-ui/issues"
+  },
+  "dependencies": {
+    "classnames": "^2.1.3"
+  },
+  "description": "UI for react.js",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel": "^5.8.21",
+    "babel-loader": "^5.3.2",
+    "bundle-loader": "^0.5.0",
+    "css-loader": "^0.15.6",
+    "eslint": "^1.1.0",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-babel": "^3.0.0",
+    "eslint-plugin-react": "^3.3.1",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.17.0",
+    "node-sass": "^3.4.2",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.5.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3b1c607c6a0059733868797ce7371ff73276150c",
+    "tarball": "https://registry.npmjs.org/dragon-mobile-ui/-/dragon-mobile-ui-0.0.33.tgz"
+  },
+  "gitHead": "371677120a5852a7517a5a7bb45aca9acef8af77",
+  "homepage": "https://github.com/JeromeLin/dragon-ui#readme",
+  "keywords": [
+    "react",
+    "react-ui",
+    "react-component",
+    "dragon-ui",
+    "dragon-mobile-ui",
+    "dragon",
+    "mobile"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "linji",
+      "email": "16908091@qq.com"
+    }
+  ],
+  "name": "dragon-mobile-ui",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JeromeLin/dragon-ui.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:lib && npm run build:umd && npm run build:umd:min",
+    "build:lib": "babel components --out-dir lib",
+    "build:umd": "webpack --config webpack.config.umd.js",
+    "build:umd:min": "webpack -p --config webpack.config.umd.min.js",
+    "clean": "rm -rf lib && rm -rf dist",
+    "deploy": "rm -rf node_modules && npm install && npm run build",
+    "dev": "node devServer.js",
+    "lint": "eslint components --ext '.js,.jsx'",
+    "pro": "rm -rf assets && webpack --config webpack.config.pro.js",
+    "start": "npm run deploy && npm run dev"
+  },
+  "tags": [
+    "react",
+    "dragon"
+  ],
+  "version": "0.0.33"
+}

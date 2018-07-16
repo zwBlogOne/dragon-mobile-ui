@@ -1,0 +1,36 @@
+.ui-panel {
+  /*margin-bottom: r(20);*/
+}
+
+.ui-panel-header,
+.ui-panel-footer {
+  position: relative;
+  padding: r(10) r(15);
+}
+
+.ui-panel-body {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.ui-panel-footer {
+  margin-bottom: r(10);
+  color: #636363;
+  font-size: r(13);
+}
+
+.ui-panel-title {
+  line-height: 1.5;
+  font-size: r(15);
+  color: #636363;
+
+  .ui-icon {
+    margin-right: r(5);
+  }
+}
+
+.ui-panel-more {
+  position: absolute;
+  top: 0;
+  right: r(15);
+}
